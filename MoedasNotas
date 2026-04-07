@@ -1,0 +1,66 @@
+din = float(input())
+if din >= 100:
+    notas100 = din//100
+    print(notas100)
+    dinF = din%100
+    print(dinF)
+if dinF >= 50:
+    notas50 = dinF//50
+    print(notas50)
+    dinF = dinF%50
+    print(dinF)
+if dinF >= 20:
+    notas20 = dinF//20
+    print(notas20)
+    dinF = dinF%20
+    print(dinF)
+if dinF >= 10:
+    notas10 = dinF//10
+    print(notas10)
+    dinF = dinF%10
+    print(dinF)
+if dinF >= 5:
+    notas5 = dinF//5
+    print(notas5)
+    dinF = dinF%5
+    print(dinF)
+if dinF >= 2:
+    notas2 = dinF//2
+    print(notas2)
+    dinF = dinF%2
+    print(dinF)
+if dinF >= 1:
+    notas1 = dinF//1
+    print(notas1)
+    dinF = dinF%1
+    print(dinF)
+if dinF >= 0.5:
+    moeda1 = dinF//0.5
+    print(moeda1)
+if dinF >= 0.25:
+    moeda2 = dinF//0.25
+    print(moeda2)
+if dinF >= 0.10:
+    moeda3 = dinF//10
+    print(moeda3)
+if dinF >= 0.05:
+    moeda4 = dinF//0.05
+    print(moeda4)
+if dinF >= 0.01:
+    moeda5 = dinF//0.01
+    print(moeda5)
+
+print('NOTAS: ')
+print(f'{notas100} nota(s) de R$ 100.00')
+print(f'{notas50} nota(s) de R$ 50.00')
+print(f'{notas20} nota(s) de R$ 20.00')
+print(f'{notas10} nota(s) de R$ 10.00')
+print(f'{notas5} nota(s) de R$ 5.00')
+print(f'{notas2} nota(s) de R$ 2.00')
+print('MOEDAS: ')
+print(f'{notas1} moeda(s) de R$ 1.00')
+print(f'{moeda1} moeda(s) de R$ 0.50')
+print(f'{moeda2} moeda(s) de R$ 0.25')
+print(f'{moeda3} moeda(s) de R$ 0.10')
+print(f'{moeda4} moeda(s) de R$ 0.05')
+print(f'{moeda5} moeda(s) de R$ 0.01')
