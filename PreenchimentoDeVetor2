@@ -1,0 +1,14 @@
+N = int(input())
+men = float('inf')
+pos = 0
+X = [0]*N
+if 1 < N < 1000:
+    for i in range(N):
+        X[i] = int(input())
+        if X[i] < men:
+            men = X[i]
+            pos = i
+        else:
+            men = men
+print(f'Menor valor: {men}')
+print(f'Posição: {pos}')
