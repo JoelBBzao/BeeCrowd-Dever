@@ -1,0 +1,11 @@
+H0 = int(input())
+maior = 0
+if 1 <= H0 <= 500:
+    while H0 > 1:
+        if H0 > maior:
+            maior = H0
+        if H0 % 2 == 0:
+            H0 = 1/2*H0
+        else:
+            H0 = (3*H0)+1
+    print(maior)
