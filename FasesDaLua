@@ -1,0 +1,15 @@
+fase = input()
+vet = fase.split()
+com = int(vet[0])
+fim = int(vet[1])
+if com >= 0 and fim >=0:
+    if com > fim:
+        if com <= 97 and fim < com:
+            print('minguante')
+    if com < fim:
+        if com >=2 and 3<=fim<=96:
+            print('crescente')
+    if com >=97 and 97 <= fim <= 100:
+        print('cheia')
+    if 0<=com<2 and fim <= 2:
+        print('nova')
