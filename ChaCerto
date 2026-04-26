@@ -1,0 +1,9 @@
+cha = int(input())
+chute = input()
+certo = 0
+vet = chute.split()
+for i in range(5):
+    chute = int(vet[i])
+    if chute == cha:
+        certo +=1
+print(certo)
