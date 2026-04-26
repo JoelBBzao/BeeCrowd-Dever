@@ -1,0 +1,20 @@
+N = int(input())
+X = []*N
+impar = []
+pares = []
+p=0
+for i in range(0,N):
+    val = int(input())
+    if val % 2 == 0:
+        pares.append(val)
+    else:
+        impar.append(val)
+pares.sort()
+impar.sort()
+impar = impar[::-1]
+for i in range(len(pares)):
+    X.append(pares[i])
+for i in range(len(impar)):
+    X.append(impar[i])
+for i in range(N):
+    print(X[i])
